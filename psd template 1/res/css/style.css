@@ -1,0 +1,301 @@
+
+
+/*=========================================================
+   Template Name: Bittue -A portfolio template
+   Template URI:
+   Template type:Portfoluio
+   Author: Bitue
+   Version:1.0
+   Support:ashikul.islam_ashik@yahoo.com
+
+
+
+=========================================================*/
+
+/*google font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+               /*     CSS INDEX  
+
+                    1.COMMON CSS
+                    2.About CSS
+                    3.About CSS
+                    4.work CSS
+                    5.Portfoluio CSS
+                    6.signature CSS
+                    7.contact CSS
+
+*/
+
+
+*{
+    margin: 0; padding: 0 ; -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Roboto', sans-serif; font-size: 10px;
+    font-weight: 400; text-rendering: optimizeLegibility;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+
+               /*2.HEADER*/
+   
+
+nav{
+    max-width: 1200px; margin: auto; display: flex; flex-direction: row; justify-content: space-between; align-items: center ;height: 70px
+}
+
+header{
+    height: 100vh; background-image:linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("../img/photography-of-woman-listening-to-music-761963.jpg") ; background-repeat: no-repeat; background-size: cover; background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+}
+.menu a{ color: #fff}
+.menu a ion-icon{
+    font-size: 40px; border: 1px solid #fff 
+}
+.box-content{
+    max-width:1200px; margin: auto; text-align: center;position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.box-content h1{
+    font-size: 600%; color: #fff; font-weight: 600;
+    text-shadow: 1px 1px  black; 
+}
+
+h1::before{
+    content: ""; display: block; width: 500px; height: 2px;
+    background: #fff ; 
+}
+h1::after{
+    content: ""; display: block; width: 500px; height: 2px;
+    background: #fff ; 
+}
+.btn{
+    margin-top: 50px;
+}
+.btn button{ 
+    width: 100px; height: 40px; margin-right: 20px;
+    background-image:linear-gradient(to right,rgba(0,0,0,1),rgba(212, 205, 16, 0.81));
+    border: none; border-radius: 10px; transition: border-radius 1s linear;
+    
+}
+.btn button a{
+    font-size: 150%; font-weight: 200; color:#fff; font-weight: 300; 
+}
+.btn button:hover{
+    background: black; color: white; border-radius: 24px
+}
+
+
+
+
+
+/* About CSS section*/
+
+section{
+    padding:100px 0; 
+}
+.row{
+     max-width: 1200px; margin: auto;
+}
+.grid-item img{
+    height: 300px; 
+} 
+
+.grid-template{
+    display: grid; grid-template-columns: 1fr 2fr;
+    grid-gap: 60px
+}
+.des h4{
+    text-align: center; font-size: 300%; 
+    
+}
+.content p{
+    text-align: center; font-size: 150%;
+    padding-bottom: 40px;
+}
+.hire{
+    text-align: center;
+}
+.hire button {
+    width: 100px; height: 40px ; border: none; border-radius: 14px;   background-image: linear-gradient(to right,rgba(0,0,0,1),rgba(212, 205, 16, 0.81)); transition: border-radius 1s ease;
+}
+.hire button a{
+    color: #fff; font-weight: 300; font-size: 150%
+}
+.hire button:hover{
+    background: black; color: white; border-radius: 24px
+}
+
+
+
+
+
+/*  start process css*/
+
+
+
+
+
+
+.section-title h2{
+    font-size: 300%; text-align: center; font-weight: 400;
+    padding-bottom: 10px;
+    
+}
+.section-title p{
+    font-size: 150%; font-weight: 200; text-align: center;
+    color: black; padding-bottom: 10px
+}
+.grid{
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 0 10px;
+}
+.grid-content{
+     text-align: center;color: black;padding: 40px 0; border-radius: 14px;
+}
+
+.grid-content ion-icon{
+    font-size: 600%; margin-bottom: 10px
+}
+.grid-content h4{
+    font-size: 150%;
+}
+  
+
+/*start work*/
+
+.flex{
+    display: flex; justify-content: space-around; align-items: center;background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%); padding: 100px 0;background-attachment: fixed;
+
+ 
+}
+.left ,.right{
+    width: 40%; padding: 50px 0;box-shadow: 5px 5px 18px rgba(0,0,0,0.3); border-radius: 24px;
+
+}
+.up , .down{
+    padding: 10px 20px;  
+}
+.title{
+    text-align: center; font-size: 140%;letter-spacing: 1px;text-transform: uppercase;
+}
+
+
+
+
+
+/*end work*/
+/*START portfoluio work*/
+ #tum h2{
+    margin-bottom: 25px;
+}
+.grid-portfoluio{
+    display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(250px,auto); grid-gap: 10px;
+}
+.portfoluio-item{
+    background: red;
+}
+.portfoluio-item:nth-child(5){
+    background: black; grid-column: 1/3;
+}
+.portfoluio-item:nth-child(1){
+    background: url("../img/work1.jpg");
+    background-repeat: no-repeat; background-size: cover; 
+    background-position: center
+}
+.portfoluio-item:nth-child(2){
+    background: url("../img/work2.jpg");
+    background-repeat: no-repeat; background-size: cover; 
+    background-position: center
+}
+.portfoluio-item:nth-child(3){
+    background: url("../img/work3.jpg");
+    background-repeat: no-repeat; background-size: cover; 
+    background-position: center
+}
+.portfoluio-item:nth-child(4){
+    background: url("../img/work4.jpg");
+    background-repeat: no-repeat; background-size: cover; 
+    background-position: center
+}
+.portfoluio-item:nth-child(5){
+    background: url("../img/work5.jpg");
+    background-repeat: no-repeat; background-size: cover; 
+    background-position: center
+}
+.portfoluio-item:nth-child(6){
+    background: url("../img/work6.jpg");
+    background-repeat: no-repeat; background-size: cover; 
+    background-position: center
+}
+.portfoluio-item:nth-child(7){
+    background: url("../img/work7.jpg");
+    background-repeat: no-repeat; background-size: cover; 
+    background-position: center
+}
+
+
+
+
+/*end portfoluio work*/
+
+/*Start signup work*/
+.sign{
+/*    background: #ffa500; */ background-image:linear-gradient(to right,rgba(0,0,0,.6),rgba(0,0,0,.5)),url("../img/www.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;
+}
+.con{
+    max-width:1000px; margin: auto ; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 60px 0;
+}
+.con .dd p{
+    font-size: 160%; font-family: cursive; color: antiquewhite;
+}
+.signature p{
+    font-size: 200%; font-weight: 600; font-family:cursive ; text-shadow: 2px 2px 4px black; color:snow; margin-top: 30px;
+}
+
+
+
+
+
+
+/*end signup work*/
+/*start contact work*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end contact work*/
+
+
+
+
+
+
+
+
+
+
+
+
